@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Franz Mozzi — experiments and demos</title>
 <meta name="description" content="Experiments and little toys by Franz Mozzi, a web professional with twenty-five years of experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
@@ -21,7 +24,7 @@
   * { box-sizing: border-box; }
   body {
     margin: 0; background: var(--bg); color: var(--fg);
-    font: 18px/1.6 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    font: 400 18px/1.6 "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
   }
   main { max-width: 58rem; margin: 0 auto; padding: 4rem 1.5rem 3rem; }
 
@@ -35,24 +38,24 @@
   .figure img { display: block; width: 100%; height: auto; }
 
   h1 {
-    font-size: var(--h1-size); line-height: 1.6; font-weight: normal; letter-spacing: -.01em;
+    font-size: var(--h1-size); line-height: 1.6; font-weight: 600; letter-spacing: -.015em;
     margin: 0 0 .25rem;
     padding-top: calc(var(--fig-w) * 1395 / 1230 * .6032 - var(--h1-size) * 1.6 / 2);
   }
   .sub { color: var(--muted); margin: 0 0 3rem; max-width: 30rem; }
   h2 {
     clear: both; max-width: var(--col);
-    font: 600 .75rem/1 system-ui, sans-serif; text-transform: uppercase;
+    font-size: .75rem; line-height: 1; font-weight: 600; text-transform: uppercase;
     letter-spacing: .12em; color: var(--muted); margin: 0 0 1rem;
   }
   ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); max-width: var(--col); }
   li { border-bottom: 1px solid var(--line); }
   li a { display: block; padding: 1.1rem 0; color: inherit; text-decoration: none; }
   li a:hover .name, li a:focus-visible .name { color: var(--accent); }
-  .name { font-size: 1.2rem; transition: color .15s; }
+  .name { font-size: 1.2rem; font-weight: 600; transition: color .15s; }
   .name::after { content: " →"; color: var(--accent); }
   .desc { display: block; color: var(--muted); font-size: .95rem; }
-  footer { margin-top: 3rem; font: .85rem system-ui, sans-serif; color: var(--muted); }
+  footer { margin-top: 3rem; font-size: .85rem; color: var(--muted); }
   footer a { color: inherit; }
 
   @media (max-width: 44rem) {
